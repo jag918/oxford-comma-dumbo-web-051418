@@ -1,6 +1,6 @@
 def oxford_comma(array)
   if array.size==1 
-    string=array.split("\n")
+    string=array.split()
   elsif array.size==2 
     string=array.split(",")
     new_string="#{string[0]} and #{string[1]}"
