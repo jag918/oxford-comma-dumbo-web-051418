@@ -6,5 +6,5 @@ def oxford_comma(array)
   else
       string=array.join(",")
   end
-  puts new_string
+  puts "#{new_string}"
 end
