@@ -6,7 +6,7 @@ def oxford_comma(array)
   else
       string=array.join(", ")
       new_array=string.split(" ")
-      newest=new_array[::new_array.size-2]+newest.push(",and")+new_array[::new_array.size-1]
+      newest="#{new_array[::new_array.size-2]} #{newest.push(",and")} #{new_array[::new_array.size-1]}"
   end
   return string
 end
