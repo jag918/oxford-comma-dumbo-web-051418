@@ -3,7 +3,7 @@ def oxford_comma(array)
     string=array.split(" ")
   elsif array.size==2 
     string=array.split(",")
-    string=string[0]+"and"+string[1]
+    string="#{string[0]} and #{string[1]}"
   else
     string=array.split(",")
     counter=0
