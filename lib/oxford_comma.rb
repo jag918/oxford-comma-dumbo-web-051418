@@ -3,18 +3,18 @@ def oxford_comma(array)
     string=array.split("\n")
   elsif array.size==2 
     string=array.split(",")
-    string="#{string[0]} and #{string[1]}"
+    new_string="#{string[0]} and #{string[1]}"
   else
     string=array.split(",")
     counter=0
     loop do
       counter+=1
-      string+="#{string[counter]}, " 
+      new_string+="#{string[counter]}, " 
       if counter < array.size
-        string+=" ,and #{string[counter]}"
+        new_string+=" ,and #{string[counter]}"
         break
       end
     end
   end
-  puts string
+  puts new_string
 end
