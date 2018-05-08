@@ -10,9 +10,9 @@ def oxford_comma(array)
     counter=0
     loop do
       counter+=1
-      string+=string[counter]+", " 
+      string+="#{string[counter]}, " 
       if counter < array.size
-        string+=" ,and "string[counter]
+        string+=" ,and #{string[counter]}"
         break
       end
     end
