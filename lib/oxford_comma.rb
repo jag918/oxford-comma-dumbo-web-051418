@@ -5,6 +5,9 @@ def oxford_comma(array)
     string=array.join(" and ")
   else
       last_chr=array.pop
+      array.push("and")
+      array.push(last_chr)
+      array.join(",")
   end
   return string
 end
